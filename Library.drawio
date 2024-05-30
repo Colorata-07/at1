@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-30T04:57:55.039Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="gtc-SWctXiI0d46h3WH9" version="24.4.10" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-30T05:53:36.166Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="__b2EEIfkJ3ZfJP2mkdh" version="24.4.10" type="github">
   <diagram name="Page-1" id="-mPD7jEL7bo5maE6MtQu">
-    <mxGraphModel dx="1961" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2049" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -47,9 +47,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5fbe4rSaMFGnmQCFm6fV-32" value="Loan" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="510" width="180" height="164" as="geometry" />
+          <mxGeometry x="150" y="590" width="180" height="164" as="geometry" />
         </mxCell>
-        <mxCell id="5fbe4rSaMFGnmQCFm6fV-33" value="- loan_date: Date/Time(PK)&lt;div&gt;- return_date: Date/Time&lt;/div&gt;&lt;div&gt;- member_id: String (PK)(FK)&lt;/div&gt;&lt;div&gt;- barcode: String (PK)(FK)&lt;/div&gt;&lt;div&gt;- staff_id: String(FK)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5fbe4rSaMFGnmQCFm6fV-32">
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-33" value="- loan_date: Date/Time(PK)&lt;div&gt;- return_date: Date/Time&lt;/div&gt;&lt;div&gt;- member: Member(FK)&lt;/div&gt;&lt;div&gt;- book: Book (FK)&lt;/div&gt;&lt;div&gt;- librarian: Librarian(FK)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5fbe4rSaMFGnmQCFm6fV-32">
           <mxGeometry y="26" width="180" height="104" as="geometry" />
         </mxCell>
         <mxCell id="5fbe4rSaMFGnmQCFm6fV-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="5fbe4rSaMFGnmQCFm6fV-32">
@@ -83,7 +83,7 @@
           <mxGeometry y="148" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="5fbe4rSaMFGnmQCFm6fV-44" value="Book" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-340" y="547" width="160" height="174" as="geometry" />
+          <mxGeometry x="-160" y="690" width="160" height="174" as="geometry" />
         </mxCell>
         <mxCell id="5fbe4rSaMFGnmQCFm6fV-45" value="- barcode: Style&lt;div&gt;- book_title: String&lt;/div&gt;&lt;div&gt;- ibsn: Interger&lt;/div&gt;&lt;div&gt;- publication year: Integer&lt;/div&gt;&lt;div&gt;- author: String&lt;/div&gt;&lt;div&gt;- genre: String&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5fbe4rSaMFGnmQCFm6fV-44">
           <mxGeometry y="26" width="160" height="114" as="geometry" />
@@ -93,6 +93,44 @@
         </mxCell>
         <mxCell id="5fbe4rSaMFGnmQCFm6fV-47" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5fbe4rSaMFGnmQCFm6fV-44">
           <mxGeometry y="148" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-56" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.995;entryY=0.77;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="5fbe4rSaMFGnmQCFm6fV-33" target="5fbe4rSaMFGnmQCFm6fV-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="148.20000000000005" y="697.5360000000001" as="sourcePoint" />
+            <mxPoint x="170" y="684" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-59" value="Borrow Books" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5fbe4rSaMFGnmQCFm6fV-56">
+          <mxGeometry x="0.077" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-57" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.012;entryY=0.912;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.014;exitY=0.865;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="5fbe4rSaMFGnmQCFm6fV-33" target="5fbe4rSaMFGnmQCFm6fV-45">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="20" y="780" as="sourcePoint" />
+            <mxPoint x="180" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="152" y="700" />
+              <mxPoint x="75" y="700" />
+              <mxPoint x="75" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-60" value="Is Borrowed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5fbe4rSaMFGnmQCFm6fV-57">
+          <mxGeometry x="-0.0925" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-58" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="5fbe4rSaMFGnmQCFm6fV-33" target="5fbe4rSaMFGnmQCFm6fV-41">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="334.32000000000016" y="682.9760000000001" as="sourcePoint" />
+            <mxPoint x="418.0799999999999" y="570.0039999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5fbe4rSaMFGnmQCFm6fV-61" value="&lt;br&gt;Process Loans" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5fbe4rSaMFGnmQCFm6fV-58">
+          <mxGeometry x="0.435" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
